@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.tabs {
+    margin: 50px;
+    position: relative;
+}
+
+.tabs__btns {
+    display: flex;
+    gap: 3px;
+}
+
+.tab__btn {
+    cursor: pointer;
+    background-color: #ffade485;
+    padding: 10px;
+    width: 190px;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+    font-weight: 500;
+}
+
+
+.tab__btn.active {
+    background-color: #ffade4;
+}
+
+.tab__btn:hover {
+    transition: .7s;
+    background-color: #ffade4;
+}
+
+.tab__text {
+    position: absolute;
+    top: 100%;
+    padding: 25px;
+    background-color: transparent;
+    border: 1px solid #ffade4;
+    max-width: 800px;
+    visibility: hidden;
+    font-size: 20px;
+    border-radius: 0px 10px 10px 10px;
+}
+
+.tab__text.active {
+    visibility: visible;
+}
